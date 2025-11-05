@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pmalacho-mit/st-page-flip
+	branch = dist
+	commit = 2024bbbbe550b2e43b4bacc8c3897a017cde4ff2
+	parent = 5aeedbcd6e557a50a3b548b77b32075d1ce4132c
+	method = merge
+	cmdver = 0.4.9
