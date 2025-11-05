@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:syblock/StPageFlip.git
+	branch = add-rtl-support
+	commit = 153239449d88fdac569b0496e13528873b417b74
+	parent = 918dffe2ce796eb70e29f8343732de8e2bd38209
+	method = merge
+	cmdver = 0.4.9
