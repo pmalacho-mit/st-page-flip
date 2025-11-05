@@ -12,12 +12,12 @@
   },
   "publishConfig": {},
   "homepage": "https://nodlik.github.io/StPageFlip/",
-  "dependencies": {},
   "devDependencies": {
+    "@types/page-flip": "^2.0.4",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "css-loader": "^3.5.3",
-    "eslint": "^7.0.0",
+    "eslint": "^6.0.0",
     "eslint-plugin-typescript": "^0.14.0",
     "prettier": "^2.0.5",
     "rollup-plugin-postcss": "^3.1.1",
@@ -33,7 +33,8 @@
   "scripts": {
     "eslint": "eslint . --ext .ts",
     "build-global": "npx webpack",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "build:and:dist": "npm run build && mv ./dist/js/page-flip.module.js ../../dist/index.js && rm -rf ./dist/js && mv ./dist ../../dist/ && cp ./node_modules/@types/page-flip/index.d.ts ../../dist/index.d.ts"
   },
   "keywords": [
     "typescript",
